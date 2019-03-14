@@ -86,8 +86,3 @@
        // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
        htmljs_Chat_Init( $("#html-chat") )
     });
-INSERT INTO users_messages (id, event, message)VALUES (25, 'newMsg', 'text');
-CometServer().subscription("msg.newMsg", function(p)
-{
-    alert(p.data)
-});
