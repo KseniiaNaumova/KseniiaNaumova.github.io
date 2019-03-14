@@ -86,9 +86,7 @@
 INSERT INTO pipes_settings ('name', 'length') VALUES ('web_chat_pipe', 10);
 $(document).ready(function()
     {
-       // Запуск api комет сервера
-       CometServer().start({dev_id: 598, user_key:"hash25", user_id:"25" }) // Идентификатор разработчика на comet-server.ru
- 
+      
        // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
        htmljs_Chat_Init( $("#html-chat") )
     });
